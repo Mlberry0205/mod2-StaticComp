@@ -1,1 +1,44 @@
+* {
+    border: solid 2px red;
+  } 
+  
+  html {
+      font-family: 'Acme', sans-serif;
+      background-image: url("assets/faded-background.png");
+      background-repeat:no-repeat;
+      background-position: center;
+      background-size: cover;
+      height: 100%;
+    }
+    
+    body {
+      display: flex;
+      
+    }
+    
+    nav {
+        background-color: darkgrey;
+        height: 100%;
+        width: 100%;
+    }
+    
+    /* ######### CARDS ############# */
 
+    .main-card-section {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        grid-template-rows: repeat(2, 3fr) repeat(3, 1fr);
+        grid-column-gap: 5px;
+        grid-row-gap: 6px;
+        background-color: aquamarine;
+        }
+        
+        .card1 { grid-area: 1 / 1 / 2 / 2; }
+        .card2 { grid-area: 1 / 2 / 2 / 3; }
+        .card3 { grid-area: 1 / 3 / 2 / 4; }
+        .card4 { grid-area: 1 / 4 / 2 / 5; }
+        .card5 { grid-area: 2 / 1 / 3 / 2; }
+        .card6 { grid-area: 2 / 2 / 3 / 3; }
+        .card7 { grid-area: 2 / 3 / 3 / 4; }
+        .card8 { grid-area: 2 / 4 / 3 / 5; }
+ 
