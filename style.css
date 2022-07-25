@@ -1,23 +1,28 @@
-* {
+/* * {
     border: solid 2px red;
-  } 
+  }  */
   
-  html {
+  /* html {
       font-family: 'Acme', sans-serif;
       background-image: url("assets/faded-background.png");
       background-repeat:no-repeat;
       background-position: center;
       background-size: cover;
       height: 100%;
-    }
+    } */
     
     body {
       display: flex;
+      flex-direction: column;
+      background-color: #f7f7f7
       
     }
     
     nav {
+        display:flex;
+        flex-direction: row;
         background-color: darkgrey;
+        border: 2px solid pink;
         height: 100%;
         width: 100%;
     }
@@ -25,13 +30,19 @@
     /* ######### CARDS ############# */
 
     .main-card-section {
+        /* display:flex; */
         display: grid;
-        grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(2, 3fr) repeat(3, 1fr);
+        grid-template-columns: repeat(4, 1fr);
+        /* grid-template-rows: repeat(2, 3fr) repeat(3, 1fr); */
         grid-column-gap: 5px;
         grid-row-gap: 6px;
         background-color: aquamarine;
-        }
+        border: 2px solid teal;
+    }
+
+    .card-container {
+        border: 2px solid black;
+    }
         
         .card1 { grid-area: 1 / 1 / 2 / 2; }
         .card2 { grid-area: 1 / 2 / 2 / 3; }
@@ -41,4 +52,6 @@
         .card6 { grid-area: 2 / 2 / 3 / 3; }
         .card7 { grid-area: 2 / 3 / 3 / 4; }
         .card8 { grid-area: 2 / 4 / 3 / 5; }
+
+       
  
